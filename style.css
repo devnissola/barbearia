@@ -1,0 +1,211 @@
+.agendamento {
+    width: 10%;
+    padding: 0.5%;
+    width: auto;
+    align-content: center;
+    background-color: none;
+    margin-left: 79.5%;
+    top: 88%;
+    position: fixed;
+    align-items: center;
+}
+
+body {
+    padding: 0;
+    margin: 2%;
+    max-width: 98%;
+    font-family: Arial, sans-serif;
+    background-image: url('/imagens/background/cortes.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.images {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about, #services {
+    text-align: justify;
+}
+
+.images img {
+    margin: 0px;
+    border: 0px;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+nav h1 {
+    text-align: left;
+    margin-left: 5%;
+}
+
+nav h2 {
+    text-align: center;
+    margin-left: 5%
+}
+
+nav ul {    
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: larger;
+    text-align: left;
+    margin-right: 50px;
+    display: inline-flex;
+    color: white;
+}
+
+.flex-container table {
+    display: table;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+th {
+    padding: 2%;
+}
+
+
+td, th {
+    background-color: silver;
+    color: black;
+    font-size: large;
+    font-weight: 900;
+}
+
+.tablex {
+    display: table;
+    text-align: center;
+    line-height: 400%;
+    font-size: large;
+    font-weight: 900;
+    width: 35%;
+    background-color: rgba(34, 27, 27, 0.464);
+    box-shadow: 0px 0px 10px 5px black; 
+}
+
+table {
+    width: 100%;
+    color: white;
+    letter-spacing: 4px;
+}
+
+caption {
+    width: 100%;
+    color: black;
+    letter-spacing: 3px;
+}
+
+legend {
+    background-color:rgb(57, 54, 54);
+}
+
+.contact {
+    color: white;
+}
+
+/* Pequenos dispositivos (smartphones em modo retrato) */
+@media screen and (max-width: 600px) {
+    .flex-container, .images {
+        display: grid;
+    }
+
+    .tablex {
+        width: 100%;
+    }
+}
+
+/* Dispositivos médios (tablets em modo retrato, smartphones em modo paisagem) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    .agendamento {
+        justify-items: auto;
+    }
+
+    .flex-container, .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tablex {
+        width: 90%;
+    }
+}
+
+/* Dispositivos grandes (tablets em modo paisagem, pequenos laptops) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .flex-container, .images {
+        display:list-item;
+    }
+
+    .images img {
+        width: 100%;
+    }
+
+    .tablex {
+        width: 100%;
+    }
+}
+
+/* Dispositivos extra grandes (laptops grandes, desktops) */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .agendamento {
+        margin-top: 10%;
+        margin-right: 2%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablex {
+        width: 50%;
+    }
+}
+
+/* Dispositivos ultra grandes (desktops grandes, monitores 4K) */
+@media screen and (min-width: 1200px) {
+    .flex-container, .images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tablex {
+        width: 60%;
+    }
+}   
